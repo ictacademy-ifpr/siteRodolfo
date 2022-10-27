@@ -56,24 +56,16 @@ export const Banner = styled.section`
 
 export const SectionAboutIct= styled.section`
     background-color: #f7f8fa ;
-    padding: 150px  10px;
-
+    padding: 100px  15px;
+    overflow: hidden;
+    
     .container{
         display: flex ;
         align-items: center;
         justify-content: space-between;
         
         #about_ict_left{
-            max-width: 455px;
-            position: relative ;
-
-            h1{
-                background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-size: 40px;
-                margin-bottom: 35px;
-            }
+            max-width: 455px;            
             p{
                 font-size: 20px;
                 line-height: 35px;
@@ -82,7 +74,16 @@ export const SectionAboutIct= styled.section`
     
         #logo_ict{
             max-width: 430px;
-            position: relative ;
         }
+    }
+`
+
+export const SectionCourses = styled.section`
+    background-color: #fff;
+    padding: 100px 15px;
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
     }
 `
