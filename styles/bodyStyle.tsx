@@ -62,8 +62,11 @@ export const SectionAboutIct= styled.section`
         display: flex ;
         align-items: center;
         justify-content: space-between;
+        
         #about_ict_left{
             max-width: 455px;
+            position: relative ;
+
             h1{
                 background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
                 -webkit-background-clip: text;
@@ -79,6 +82,7 @@ export const SectionAboutIct= styled.section`
     
         #logo_ict{
             max-width: 430px;
+            position: relative ;
         }
     }
 `
