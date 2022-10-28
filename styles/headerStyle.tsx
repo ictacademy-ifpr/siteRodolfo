@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 
 const HeaderStyle = styled.header`  
-    #bottom{
+    #transparent{
+        background-color: transparent;
+    }
+    #white{
+        background-color: #fff;
+    }
+    .head{
         padding: 5px 10px;
         border-bottom: 1px solid #eaedf2 ;
-        background-color: transparent;
         position: fixed;
         z-index: 2;
         width: 100%;

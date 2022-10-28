@@ -121,14 +121,9 @@ sup {
 }
 
 a {
-  color: #007bff;
   text-decoration: none;
   background-color: transparent; 
   -webkit-text-decoration-skip: objects; 
-}
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
@@ -151,9 +146,7 @@ samp {
   font-size: 1em; 
 }
 pre {
- 
   margin-top: 0;
- 
   margin-bottom: 1rem; 
   overflow: auto;
   -ms-overflow-style: scrollbar;
@@ -229,7 +222,6 @@ button,
 select {
   text-transform: none; 
 }
-
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,

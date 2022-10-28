@@ -2,12 +2,16 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 import HeaderStyle from '../../styles/headerStyle'
 
-export default function Header(){
+interface Props{
+    class: string
+}
+
+export default function Header(props:Props){
 
     useEffect(()=>{
-        let head = document.getElementById('bottom')
+        let head = document.getElementById('transparent')
+        
         function handleScroll(){
-            console.log(window.scrollY)
             if(window.scrollY < 98 && head != null){
                 head.style.backgroundColor='transparent'
                 head.style.transition= '1s'
@@ -25,7 +29,7 @@ export default function Header(){
 
     return(
         <HeaderStyle>
-            <div id="bottom">
+            <div id={props.class} className='head'>
                 <div className="container">
                     <div className='imagesBox'>
                         <img src='/huawei_logo.png' className='huawei' alt='logo Huawei'/>
@@ -34,7 +38,7 @@ export default function Header(){
                     <nav>
                         <ul>
                             <li><Link href=''>Sobre a Huawei</Link></li>
-                            <li><Link href=''>Cursos</Link></li>
+                            <li><Link href='/courses'>Cursos</Link></li>
                             <li><Link href=''>Eventos</Link></li>
                         </ul>
                     </nav>

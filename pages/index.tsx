@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,20 +8,22 @@ import { Pagination } from "swiper";
 import { motion } from "framer-motion"
 
 import Header from '../src/components/header'
-import {Banner, SectionAboutIct, SectionCourses} from '../styles/bodyStyle'
+import { Banner, SectionAboutIct, SectionCourses, SectionTeam} from '../styles/bodyStyle'
 import Card from '../src/components/cards'
+import Collabs from '../src/components/collabs'
+import Footer from '../src/components/footer'
 
 import courses from '../src/data/courses.json'
+import collabs from '../src/data/collabs.json'
 
 const Home: NextPage = () => {
 
   return (
     <>
-      <Header/>
+      <Header class='transparent'/>
       <Banner>
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-          <SwiperSlide key={1} className="banner_event_1">
-          </SwiperSlide>
+          <SwiperSlide key={1} className="banner_event_1"></SwiperSlide>
           <SwiperSlide key={2} className="banner_event_2"></SwiperSlide>
         </Swiper>
       </Banner>
@@ -52,16 +54,62 @@ const Home: NextPage = () => {
 
       <SectionCourses>
         <div className="container">
-          <h1>Cursos</h1>
-          <div className="grid">
-            {
-              courses.slice(0, 3).map(({url, img, title}, index)=>
-                <Card key={index} url={url} img={img} title={title}/>
-              )
-            }
-          </div>
+          <motion.h1
+            initial={{ transform: 'translateY(100px)', opacity: 0}}
+            whileInView={{ transform: 'translateY(0px)', opacity: 1}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}>
+            Cursos
+          </motion.h1>
+          <motion.div
+            initial={{ transform: 'translateY(200px)', opacity: 0}}
+            whileInView={{ transform: 'translateY(0px)', opacity: 2}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}>
+              <div className="grid">
+                {
+                  courses.slice(0, 3).map(({url, img, title}, index)=>
+                    <Card key={index} url={url} img={img} title={title}/>
+                  )
+                }
+              </div>
+              <div className="btn">
+                <Link  href="/courses">
+                  <a>
+                    Ver mais
+                  </a>
+                </Link>
+              </div>
+          </motion.div>
         </div>
       </SectionCourses>
+
+      <SectionTeam>
+        <div className="container">
+          <motion.h1
+            initial={{ transform: 'translateY(100px)', opacity: 0}}
+            whileInView={{ transform: 'translateY(0px)', opacity: 1}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}>
+            Colaboradores
+          </motion.h1>
+          <motion.div
+            initial={{ transform: 'translateY(200px)', opacity: 0}}
+            whileInView={{ transform: 'translateY(0px)', opacity: 2}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}>
+              <div className="grid">
+                {
+                  collabs.map((item, index)=>
+                    <Collabs key={index} photo={item.photo} name={item.name} description={item.description}/>
+                  )
+                }
+              </div>
+          </motion.div>
+        </div>
+      </SectionTeam>
+
+      <Footer/>
     </>
   )
 }

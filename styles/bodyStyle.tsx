@@ -81,9 +81,54 @@ export const SectionAboutIct= styled.section`
 export const SectionCourses = styled.section`
     background-color: #fff;
     padding: 100px 15px;
+    position: relative;
+    
+    &:after{
+        content: "";
+        width: 995px;
+        height: 1px;
+        background-color: #afafaf;
+        position: absolute;
+        bottom: 0;
+        right: 200px;
+    }
 
     .grid{
         display: grid;
         grid-template-columns: repeat(3, auto);
     }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+            color: #fff;
+            border-radius: 40px;
+            max-width: 150px;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-top: 35px ;
+
+            &:hover{
+                text-decoration: none;
+                background:#b60108;
+            }
+        }
+    }
+`
+
+export const SectionTeam = styled.section`
+    padding: 100px 15px;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 60px;
+    }
+    
 `
