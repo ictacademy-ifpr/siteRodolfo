@@ -1,45 +1,51 @@
 import styled from "styled-components"
 
 export const CardStyle = styled.div`
-    height: 300px;
-    width: 300px; 
+    width: 100%;
+    aspect-ratio:1;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 30px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: pointer;  
+    transition: 1s ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(5, 2, 53, 0.4);
+    background-blend-mode: multiply;
 
-    .card_img{
-        width: 100%;
+    img{ 
+        visibility: hidden;
         height: 100%;
-        border-radius: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: rgba(5, 2, 53, 0.4);
-        background-blend-mode: multiply;
+        width: 100%;
+    }
+
+    p{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 40px;
+        font-weight: 500;
+        max-width: 170px;
+        text-align: center;
+        line-height:1 ;
+        position: absolute;
+    }
+    
+    &:hover{
+        background-color: rgba(5, 2, 53, 0.6);
         transition: 1s ;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &:hover{
-            transform: scale(1.1);
-            transition: 1s ;
-            background-color: rgba(5, 2, 53, 0.6);
-            p{
-                color: #fff;
-                transition: 1s ;
-            }
-        }
-
+        
         p{
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 40px;
-            position: absolute;
-            font-weight: 500;
-            max-width: 170px;
-            text-align: center;
-            line-height:1 ;
+            color: #fff;
+            transition: 1s ;
         }
     }
+
+    @media(max-width:950px){
+        max-width: 260px;
+    }
+    
 `

@@ -34,6 +34,23 @@ const CollabsStyle = styled.div`
             margin-bottom: 10px;
         }
     }
+
+    @media(max-width:500px){
+        .photo{
+            max-width: 150px;
+            width: 100%;
+            height: 150px;
+        }
+    }
+    @media(max-width:400px){
+        flex-direction: column;
+        .photo{
+            margin: 0 ;
+        }
+        .description{
+            text-align: center;
+        }
+    }
 `
 
 export default CollabsStyle

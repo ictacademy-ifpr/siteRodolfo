@@ -31,17 +31,16 @@ export default function Header(props:Props){
         <HeaderStyle>
             <div id={props.class} className='head'>
                 <div className="container">
-                    <div className='imagesBox'>
-                        <img src='/huawei_logo.png' className='huawei' alt='logo Huawei'/>
-                        <img src="/ifpr.png" className='ifpr' alt='logo do instituo federal do paraná'/>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><Link href=''>Sobre a Huawei</Link></li>
-                            <li><Link href='/courses'>Cursos</Link></li>
-                            <li><Link href=''>Eventos</Link></li>
-                        </ul>
-                    </nav>
+                    <Link href='/'>
+                        <div className='imagesBox'>
+                            <div className='huawei'>
+                                <img src='/huawei_logo.png'  alt='logo Huawei'/>
+                            </div>
+                            <div className='ifpr'>
+                                <img src="/ifpr.png"  alt='logo do instituo federal do paraná'/>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </HeaderStyle>

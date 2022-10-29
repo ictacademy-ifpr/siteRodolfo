@@ -17,10 +17,12 @@ const HeaderStyle = styled.header`
         .container{
             display: flex ;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             
             .imagesBox{
                 position: relative ;
+                display: flex;
+                align-items: center;
                 &:after{
                     content: "";
                     position: absolute;
@@ -28,49 +30,41 @@ const HeaderStyle = styled.header`
                     width: 1px;
                     background: #afb1b5;
                     top: 25%;
-                    right: 48%;
+                    right: 0;
+                    left: 0;
+                    margin: 0 auto;
                 }
 
                 .huawei{
                     margin-right: 50px;
                     max-width: 200px;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
                 }
 
                 .ifpr{
                     max-width: 190px;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
                 }
             }
-            nav{
-                max-width: 400px;
-                width: 100% ;
-                ul{
-                    display: flex ;
-                    justify-content: space-between;
+        }
+    }
+
+    @media (max-width:500px){
+        .head{
+            .container{
+                .imagesBox{
+                    display: flex;
                     align-items: center;
-                    margin: 0 ;
-                    padding: 0 ;
-                    li{
-                        list-style: none;
-                        position: relative ;
-                        a{
-                            color: #605d5e;
-                            font-size: 20px;
-                            text-decoration: none;
-                        }
-                        &:hover{
-                            a{
-                                font-weight: 500;
-                            }
-                            &:after{
-                                content: "";
-                                position: absolute;
-                                bottom: -10px;
-                                left: 0;
-                                right: 0;
-                                height: 0.5em;
-                                border-top: 2px solid #a70203;
-                            }
-                        }
+                    justify-content: space-between;
+                    width: 98%;
+                    &:after{
+                        height: 35px;
                     }
                 }
             }

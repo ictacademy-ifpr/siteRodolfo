@@ -1,20 +1,21 @@
 import { CardStyle } from '../../styles/cardsStyles'
-import { url } from 'inspector'
 
 interface Props{
     url: string,
     img: string,
-    title: string
+    title: string,
+    bg: string
 }
 
 export default function Card(props:Props){
     return(
-        <CardStyle >
-            <a href={props.url} target="_blank">
-                <div style={{backgroundImage:props.img}} className='card_img'>
-                    <p>{props.title}</p>
-                </div>
-            </a>
+        <a href={props.url} target="_blank">
+        <CardStyle style={{backgroundImage:props.bg}} >
+            
+                <img src={props.img} alt="" />
+                <p>{props.title}</p>   
+           
         </CardStyle>
+        </a>
     )
 }

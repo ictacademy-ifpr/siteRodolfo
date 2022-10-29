@@ -23,8 +23,12 @@ const Home: NextPage = () => {
       <Header class='transparent'/>
       <Banner>
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-          <SwiperSlide key={1} className="banner_event_1"></SwiperSlide>
-          <SwiperSlide key={2} className="banner_event_2"></SwiperSlide>
+          <SwiperSlide key={1} className="banner_event_1">
+            <img src='seeds.jpg' alt='Imagem ICT Evento'/>
+          </SwiperSlide>
+          <SwiperSlide key={2} className="banner_event_2">
+            <img src='ict_v2.png' alt='Imagem ICT Evento'/>
+          </SwiperSlide>
         </Swiper>
       </Banner>
       
@@ -68,8 +72,8 @@ const Home: NextPage = () => {
             transition={{ duration: 1 }}>
               <div className="grid">
                 {
-                  courses.slice(0, 3).map(({url, img, title}, index)=>
-                    <Card key={index} url={url} img={img} title={title}/>
+                  courses.slice(0, 3).map(({url, img, title, bg}, index)=>
+                    <Card key={index} url={url} img={img} title={title} bg={bg}/>
                   )
                 }
               </div>
