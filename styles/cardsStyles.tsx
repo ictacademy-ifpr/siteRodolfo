@@ -47,5 +47,11 @@ export const CardStyle = styled.div`
     @media(max-width:950px){
         max-width: 260px;
     }
+
+    @media(max-width:400px){
+        p{
+            font-size: 28px;
+        }
+    }
     
 `

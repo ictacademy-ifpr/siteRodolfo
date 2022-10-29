@@ -39,15 +39,24 @@ export const Banner = styled.section`
     }
     .banner_event_1{
         background-color: #fff6ea ;
-        img{
-            object-position: bottom;
+        cursor: pointer;
+        a{
+            width: 100%;
+            height: 100%;
+            img{
+                object-position: bottom;
+            }
         }
     }
 
     .banner_event_2{
         background-color: #c2ebff;
-        img{
-            object-position: bottom;
+        a{
+            width: 100%;
+            height: 100%;
+            img{
+                object-position: bottom;
+            }
         }
     }
 
@@ -127,7 +136,6 @@ export const SectionCourses = styled.section`
         align-items: center;
         justify-content: center;
         background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
-        
         border-radius: 40px;
         max-width: 150px;
         width: 100%;

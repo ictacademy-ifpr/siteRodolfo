@@ -24,10 +24,14 @@ const Home: NextPage = () => {
       <Banner>
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide key={1} className="banner_event_1">
-            <img src='seeds.jpg' alt='Imagem ICT Evento'/>
+            <a href="https://www.huawei.com/br/news/br/2021/seeds-for-the-future-2021" target="_blank" rel="noreferrer">
+              <img src='seeds.jpg' alt='Imagem ICT Evento'/>
+            </a>
           </SwiperSlide>
           <SwiperSlide key={2} className="banner_event_2">
-            <img src='ict_v2.png' alt='Imagem ICT Evento'/>
+            <a href="https://www.huawei.com/br/news/br/2021/seeds-for-the-future-2021" target="_blank" rel="noreferrer">
+              <img src='ict_v2.png' alt='Imagem ICT Evento'/>
+            </a>
           </SwiperSlide>
         </Swiper>
       </Banner>

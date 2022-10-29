@@ -13,6 +13,7 @@ const HeaderStyle = styled.header`
         position: fixed;
         z-index: 2;
         width: 100%;
+        cursor: pointer;
 
         .container{
             display: flex ;
