@@ -126,25 +126,28 @@ export const SectionCourses = styled.section`
         display: flex;
         align-items: center;
         justify-content: center;
-        a{
-            background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
-            color: #fff;
-            border-radius: 40px;
-            max-width: 150px;
-            width: 100%;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            margin-top: 35px ;
+        background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+        
+        border-radius: 40px;
+        max-width: 150px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin: 35px auto 0 ;
 
-            &:hover{
-                text-decoration: none;
-                background:#b60108;
-            }
+        a{
+            color: #fff;
         }
-    }
+
+        &:hover{
+            text-decoration: none;
+            background:#b60108;
+        }
+        }
+    
 
     &:after{
         content: "";

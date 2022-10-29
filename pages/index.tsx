@@ -79,9 +79,7 @@ const Home: NextPage = () => {
               </div>
               <div className="btn">
                 <Link  href="/courses">
-                  <a>
-                    Ver mais
-                  </a>
+                   Ver mais
                 </Link>
               </div>
           </motion.div>

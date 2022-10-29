@@ -9,7 +9,7 @@ interface Props{
 
 export default function Card(props:Props){
     return(
-        <a href={props.url} target="_blank">
+        <a href={props.url} target="_blank" rel="noreferrer">
         <CardStyle style={{backgroundImage:props.bg}} >
             
                 <img src={props.img} alt="" />
