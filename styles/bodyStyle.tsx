@@ -37,6 +37,17 @@ export const Banner = styled.section`
         background-position: bottom;
         background-repeat: no-repeat;
     }
+    .banner_event_0{
+        background-color: rgb(1, 13, 25) ;
+        cursor: pointer;
+        a{
+            width: 100%;
+            height: 100%;
+            img{
+                object-position: bottom;
+            }
+        }
+    }
     .banner_event_1{
         background-color: #fff6ea ;
         cursor: pointer;

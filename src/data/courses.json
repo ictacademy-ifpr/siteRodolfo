@@ -1,32 +1,37 @@
 [
     {
+        "title": "Cloud Service",
+        "bg": "url('tech4.png')",
+        "img": "tech2.png",
+        "warning": "",
+        "url": "https://e.huawei.com/en/talent/#/ict-academy/news-details?consultationId=515"
+    },
+    {
         "title": "IA",
         "bg": "url('tech2.png')",
         "img": "tech2.png",
+        "warning": "Em Breve",
         "url": "https://e.huawei.com/en/talent/#ict-academy/news-details?consultationId=509"
     },
     {
         "title": "5G",
         "bg": "url('tech3.png')",
         "img": "tech2.png",
-        "url": "https://e.huawei.com/en/talent/#ict-academy/news-details?consultationId=509"
-    },
-    {
-        "title": "Cloud Service",
-        "bg": "url('tech4.png')",
-        "img": "tech2.png",
+        "warning": "Em Breve",
         "url": "https://e.huawei.com/en/talent/#ict-academy/news-details?consultationId=509"
     },
     {
         "title": "Big Data",
         "bg": "url('ia.png')",
         "img": "tech2.png",
+        "warning": "Em Breve",
         "url": "https://e.huawei.com/en/talent/#ict-academy/news-details?consultationId=509"
     },
     {
         "title": "IoT",
         "bg": "url('tech5.png')",
         "img": "tech5.png",
+        "warning": "Em Breve",
         "url": "https://e.huawei.com/en/talent/#ict-academy/news-details?consultationId=509"
     }
 ]

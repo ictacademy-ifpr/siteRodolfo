@@ -4,7 +4,8 @@ interface Props{
     url: string,
     img: string,
     title: string,
-    bg: string
+    bg: string,
+    warning: string
 }
 
 export default function Card(props:Props){
@@ -13,7 +14,8 @@ export default function Card(props:Props){
         <CardStyle style={{backgroundImage:props.bg}} >
             
                 <img src={props.img} alt="" />
-                <p>{props.title}</p>   
+                <p>{props.title}</p> 
+                <p className='warning'>{props.warning}</p>
            
         </CardStyle>
         </a>

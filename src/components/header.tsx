@@ -34,10 +34,10 @@ export default function Header(props:Props){
                     <Link href='/'>
                         <div className='imagesBox'>
                             <div className='huawei'>
-                                <img src='/huawei_logo.png'  alt='logo Huawei'/>
+                                <img src='/huawei.svg'  alt='logo Huawei'/>
                             </div>
                             <div className='ifpr'>
-                                <img src="/ifpr.png"  alt='logo do instituo federal do paraná'/>
+                                <img src="/ifpr.svg"  alt='logo do instituo federal do paraná'/>
                             </div>
                         </div>
                     </Link>

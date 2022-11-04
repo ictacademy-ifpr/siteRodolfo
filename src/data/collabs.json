@@ -1,22 +1,27 @@
 [
     {
-        "photo": "collab.png",
-        "name":  "Prof. Alberto",
-        "description": "Professor no IFPR desde 2014....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut modo conse"
+        "photo": "augusto.png",
+        "name":  "Dr. Augusto Luengo Pereira Nunes",
+        "description": "Cientista da Computação, Coordenador Geral da Huawei ICT Academy e Professor no IFPR-Campus Londrina desde 2016. "
     },
     {
-        "photo": "collab2.png",
-        "name":  "Prof. Paula",
-        "description": "Professora no IFPR desde 2014....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut modo conse"
+        "photo": "rodolfo.png",
+        "name":  "Dr. Rodolfo Barriviera",
+        "description": "Engenheiro da Computação, Gestor de Inovação e Empreendedorismo, Coordenador Técnico da Huawei ICT Academy e professor no IFPR-Campus Londrina desde 2010."
     },
     {
-        "photo": "collab2.png",
-        "name":  "Prof. Paula",
-        "description": "Professora no IFPR desde 2014...."
+        "photo": "luciana.png",
+        "name":  "Drª. Luciana M. Vieira Pöttker",
+        "description": "Cientista da Computação, professora no IFPR desde 2010, no Campus Londrina há 10 anos."
     },
     {
-        "photo": "collab.png",
-        "name":  "Prof. Alberto",
-        "description": "Professor no IFPR desde 2014...."
+        "photo": "adriana.png",
+        "name":  "Drª. Adriana Carniello",
+        "description": "Cientista da Computação, professora na Rede Federal de Ensino desde 2007, no IFPR-Campus Londrina há 7 anos"
+    }, 
+    {
+        "photo": "andreia.png",
+        "name":  "Drª. Andreia Carniello",
+        "description": "Cientista da Computação, professora na Rede Federal de Ensino desde 2007, no IFPR-Campus Londrina há 7 anos"
     }
 ]

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 
 import { motion } from "framer-motion"
 
@@ -17,12 +17,19 @@ import courses from '../src/data/courses.json'
 import collabs from '../src/data/collabs.json'
 
 const Home: NextPage = () => {
+  
+  SwiperCore.use([Autoplay])
 
   return (
     <>
       <Header class='transparent'/>
       <Banner>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" >
+        <SwiperSlide key={1} className="banner_event_0">
+            <a href="https://forms.gle/S4ve6X1bgs1rAzLK9" target="_blank" rel="noreferrer">
+              <img src='backgorund.png' alt='Inscrições para Cloud Services'/>
+            </a>
+          </SwiperSlide>
           <SwiperSlide key={1} className="banner_event_1">
             <a href="https://www.huawei.com/br/news/br/2021/seeds-for-the-future-2021" target="_blank" rel="noreferrer">
               <img src='seeds.jpg' alt='Imagem ICT Evento'/>
@@ -76,8 +83,8 @@ const Home: NextPage = () => {
             transition={{ duration: 1 }}>
               <div className="grid">
                 {
-                  courses.slice(0, 3).map(({url, img, title, bg}, index)=>
-                    <Card key={index} url={url} img={img} title={title} bg={bg}/>
+                  courses.slice(0, 3).map(({url, warning, img, title, bg}, index)=>
+                    <Card key={index} url={url} warning={warning} img={img} title={title} bg={bg}/>
                   )
                 }
               </div>

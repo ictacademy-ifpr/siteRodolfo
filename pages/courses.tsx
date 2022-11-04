@@ -27,8 +27,8 @@ export default function Courses(){
                         
                         <div className="grid">
                             {
-                                courses.map(({url, img, title, bg}, index)=>
-                                    <Card key={index} url={url} img={img} title={title} bg={bg}/>
+                                courses.map(({url, warning, img, title, bg}, index)=>
+                                    <Card key={index} url={url} warning={warning} img={img} title={title} bg={bg}/>
                                 )
                             }
                         </div>

@@ -34,6 +34,13 @@ export const CardStyle = styled.div`
         position: absolute;
     }
     
+    .warning{
+        background-color: rgba(255, 100, 100, 0.5);
+        font-size: 30px;
+        max-width: 170px;
+        bottom: 50%;
+    }
+
     &:hover{
         background-color: rgba(5, 2, 53, 0.6);
         transition: 1s ;
