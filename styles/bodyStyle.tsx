@@ -118,6 +118,14 @@ export const Banner = styled.section`
         }
     }
 
+    @media(max-width:410px){
+        .banner_event_4_responsivo,  .banner_event_3_responsivo{
+            img{
+                max-width: 290px;
+            }
+        }
+    }
+
     @media(max-width:375px){
         .banner_event_4_responsivo,  .banner_event_3_responsivo{
             img{

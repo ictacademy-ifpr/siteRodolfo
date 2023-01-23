@@ -49,6 +49,9 @@ const CollabsStyle = styled.div`
         }
         .description{
             text-align: center;
+            .description_text{
+                margin: 0 auto;
+            }
         }
     }
 `
