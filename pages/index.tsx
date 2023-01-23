@@ -45,11 +45,11 @@ const Home: NextPage = () => {
               <img src='5G_banner_responsivo.png' alt='Inscrições para curso 5G'/>
             </a>
           </SwiperSlide>
-          <SwiperSlide key={1} className="banner_event_0">
+          {/* <SwiperSlide key={1} className="banner_event_0">
             <a href="https://forms.gle/S4ve6X1bgs1rAzLK9" target="_blank" rel="noreferrer">
               <img src='backgorund.png' alt='Inscrições para Cloud Services'/>
             </a>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide key={1} className="banner_event_1">
             <a href="https://www.huawei.com/br/news/br/2021/seeds-for-the-future-2021" target="_blank" rel="noreferrer">
               <img src='seeds.jpg' alt='Imagem ICT Evento'/>
