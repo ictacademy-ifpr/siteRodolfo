@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Banner = styled.section`
-    height: 530px ;
+    height: 593px ;
     .swiper {
         width: 100%;
         height: 100%;
@@ -37,20 +37,8 @@ export const Banner = styled.section`
         background-position: bottom;
         background-repeat: no-repeat;
     }
-    .banner_event_0{
-        background-color: rgb(1, 13, 25) ;
-        cursor: pointer;
-        a{
-            width: 100%;
-            height: 100%;
-            img{
-                object-position: bottom;
-            }
-        }
-    }
-    .banner_event_1{
-        background-color: #fff6ea ;
-        cursor: pointer;
+
+    .banner_event_0,  .banner_event_1, .banner_event_2, .banner_event_3,  .banner_event_3_responsivo, .banner_event_4, .banner_event_4_responsivo{
         a{
             width: 100%;
             height: 100%;
@@ -60,24 +48,82 @@ export const Banner = styled.section`
         }
     }
 
+    .banner_event_0{
+        background-color: rgb(1, 13, 25) ;
+        cursor: pointer; 
+    }
+
+    .banner_event_1{
+        background-color: #fff6ea ;
+        cursor: pointer;
+    }
+
     .banner_event_2{
         background-color: #c2ebff;
-        a{
-            width: 100%;
-            height: 100%;
-            img{
-                object-position: bottom;
-            }
-        }
+    }
+
+    .banner_event_3{
+        background: rgb(74,0,151);
+        background: linear-gradient(90deg, rgba(74,0,151,1) 0%, rgba(147,0,125,1) 100%);
+    }
+
+    .banner_event_3_responsivo{
+        display: none;
+    }
+
+    .banner_event_4{
+        background-color: #2f4254;
+    }
+
+    .banner_event_4_responsivo{
+        display: none;
+    }
+
+    @media(max-width:1440px){
+        height: 467px ;     
     }
 
     @media(max-width:500px){
         height: 350px ;
         .banner_event_2{
-        img{
-            object-position: center;
+            img{
+                object-position: center;
+            }
+        }
+        .banner_event_4{
+            display: none;
+        }
+
+        .banner_event_4_responsivo{
+            display: flex;
+            background-color: #071620;
+            img{
+                max-width: 274px;
+                margin: 0 auto;
+            }
+        }
+
+        .banner_event_3{
+            display: none;
+        }
+
+        .banner_event_3_responsivo{
+            display: flex;
+            background: rgb(56,1,161);
+            background: linear-gradient(0deg, rgba(56,1,161,1) 0%, rgba(159,2,125,1) 100%);
+            img{
+                max-width: 274px;
+                margin: 0 auto;
+            }
         }
     }
+
+    @media(max-width:375px){
+        .banner_event_4_responsivo,  .banner_event_3_responsivo{
+            img{
+                max-width: 293px;
+            }
+        }
     }
 `
 

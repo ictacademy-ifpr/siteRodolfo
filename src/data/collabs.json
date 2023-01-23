@@ -23,5 +23,15 @@
         "photo": "andreia.png",
         "name":  "Drª. Andreia Carniello",
         "description": "Cientista da Computação, professora na Rede Federal de Ensino desde 2007, no IFPR-Campus Londrina há 7 anos"
+    },
+    {
+        "photo": "flavio-removebg.png",
+        "name":  "Dr. Flávio Navarro Fernandes",
+        "description": "Cientista da Computação, mestre em Engenharia Elétrica, professor no IFPR-Campus Londrina há 10 anos."
+    },
+    {
+        "photo": "rodrigo-removebg.png",
+        "name":  "Dr. Rodrigo Barriviera",
+        "description": "Mestre e Doutor em Engenharia Elétrica. Professor do Instituto Federal do Paraná - Campus Ivaiporã desde 2011."
     }
 ]
