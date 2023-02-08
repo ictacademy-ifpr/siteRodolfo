@@ -33,5 +33,10 @@
         "photo": "rodrigo-removebg.png",
         "name":  "Dr. Rodrigo Barriviera",
         "description": "Mestre e Doutor em Engenharia Elétrica. Professor do Instituto Federal do Paraná - Campus Avançado Arapongas, no IFPR desde 2010."
+    },
+    {
+        "photo": "romualdoo.png",
+        "name":  "Me. Romualdo Rubens de Freitas",
+        "description": "Mestre em Ciência da Computação. Professor do Ensino Básico, Técnico e Tecnológico do Instituto Federal do Paraná - Campus Londrina."
     }
 ]
