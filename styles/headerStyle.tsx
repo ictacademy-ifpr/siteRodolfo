@@ -54,18 +54,78 @@ const HeaderStyle = styled.header`
                 }
             }
         }
+
+        .btn_menu{
+            position: absolute;
+            right: 80px;
+            top: 15px;
+            border: none;
+            background-color: transparent;
+            font-size: 35px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .menu{
+            position: absolute;
+            background-color: #afb1b5;
+            max-width: 500px;
+            width: 100%;
+            right: 0;
+            top: 74px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 5px;
+            border-radius: 10px 0 0 10px;
+
+            a:last-child{
+                margin-bottom: 0;
+            }
+            a{
+                margin-bottom: 20px;
+                color: #000;
+                font-weight: 600;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+                &:hover{
+                    background:  -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+                    color:#fff;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        #open{
+            display: flex;
+        }
+        #close{
+            display: none;
+        }
+    }
+    @media (max-width:735px){
+        .head{
+            .btn_menu{
+                right:10px;
+            }
+        }
     }
 
-    @media (max-width:500px){
+    @media (max-width:540px){
         .head{
             .container{
+                padding: 10px 0;
                 .imagesBox{
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    width: 98%;
+                    width: 70%;
                     &:after{
-                        height: 35px;
+                        display: none;
+                    }
+
+                    .huawei, .ifpr{
+                        max-width: 160px;
                     }
                 }
             }

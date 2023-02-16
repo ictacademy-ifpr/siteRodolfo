@@ -1,0 +1,29 @@
+[
+    {   
+        "id": "0",   
+        "title": " Instituto Federal do Paraná (IFPR) disponibiliza curso de 5G",
+        "text": [
+            "O Instituto Federal do Paraná (IFPR) está empenhado em oferecer aos seus alunos e à comunidade em geral oportunidades de capacitação nas mais avançadas tecnologias de informação e comunicação.", 
+            "Neste contexto, foram lançados os cursos de Cloud Services e de 5G. Estes cursos já iniciaram suas atividades agora no início de fevereiro.", 
+            "O curso de 5G, o qual teve 468 inscritos, é fruto da parceria com a Softex, empresa responsável por fomentar a inovação e o empreendedorismo tecnológico no país. O curso conta com materiais da Huawei ICT Academy, programa educacional da Huawei Brasil para suporte à comunidade brasileira, e tem como objetivo formar profissionais capacitados em uma das mais avançadas tecnologias de comunicação móvel. O curso de 5G é uma iniciativa do Ministério da Ciência, Tecnologia e Inovações (MCTI) e Softex no âmbito do Programa MCTI Futuro. Neste curso, assim como no curso de Cloud, os alunos com melhor desempenho receberão vouchers para a realização da prova de certificação em 5G da Huawei (HCIA)."  ,
+            "O curso é gratuito e têm duração de 40 horas, com aulas totalmente online. As inscrições ocorreram no início de fevereiro e as aulas iniciaram na primeira semana do mesmo mês",
+            "O IFPR se orgulha de oferecer esses cursos em parceria com empresas renomadas, que visam aprimorar a formação de profissionais para atender às demandas do mercado de trabalho em constante evolução. As oportunidades de capacitação em tecnologia trazidas pelos projetos de Cloud e 5G demonstram o comprometimento do IFPR com a formação de uma sociedade mais informada e qualificada, pronta para atuar em um mundo cada vez mais conectado e tecnológico"
+        ],
+        "img": "5G.png"
+    },
+
+    {
+        "id:": "1",
+        "title": "Curso de Cloud gratuito oferecido pelo IFPR",
+        "text": [
+            "O Instituto Federal do Paraná (IFPR) está empenhado em oferecer aos seus alunos e à comunidade em geral oportunidades de capacitação nas mais avançadas tecnologias de informação e comunicação.", 
+            "Neste contexto, foram lançados os cursos de Cloud Services e de 5G. Estes cursos já iniciaram suas atividades agora no início de fevereiro.", 
+            "O curso de Cloud conta com a parceria da FiberX e também da Huawei, empresa líder no mercado de tecnologia da informação e comunicação, e tem como objetivo o cultivo de talentos em inteligência artificial e cloud computing. Tendo 454 inscritos, o curso é exclusivo para mulheres e direcionado a todo tipo de público que tenha interesse. As alunas com melhor desempenho no curso receberão vouchers para a realização da prova de certificação em Cloud da Huawei.",
+            "O curso é gratuito e têm duração de 40 horas, com aulas totalmente online. As inscrições para o curso de Cloud foram abertas no final de janeiro e as aulas começaram em fevereiro ",
+            "O IFPR se orgulha de oferecer esses cursos em parceria com empresas renomadas, que visam aprimorar a formação de profissionais para atender às demandas do mercado de trabalho em constante evolução. As oportunidades de capacitação em tecnologia trazidas pelos projetos de Cloud e 5G demonstram o comprometimento do IFPR com a formação de uma sociedade mais informada e qualificada, pronta para atuar em um mundo cada vez mais conectado e tecnológico"
+        ],
+        "img": "cloud.png"
+    }
+
+   
+]

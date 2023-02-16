@@ -1,12 +1,15 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import HeaderStyle from '../../styles/headerStyle'
+import { AiOutlineMenu } from "react-icons/ai";
+
 
 interface Props{
     class: string
 }
 
 export default function Header(props:Props){
+    const [menuOpen, setMenuOpen] = useState(false)
 
     useEffect(()=>{
         let head = document.getElementById('transparent')
@@ -41,6 +44,15 @@ export default function Header(props:Props){
                             </div>
                         </div>
                     </Link>
+                </div>
+                <button className='btn_menu' onClick={() => setMenuOpen(!menuOpen)}>
+                    <AiOutlineMenu/>
+                </button>
+                <div className='menu' id={menuOpen==true?'open':'close'}>
+                    <Link href='/'><a>Home</a></Link>
+                    <Link href='/courses'><a>Cursos</a></Link>
+                    <Link href='/midia'><a>Mídia</a></Link>
+                    {/* <Link href='/'><a>Equipe</a></Link> */}
                 </div>
             </div>
         </HeaderStyle>
