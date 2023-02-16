@@ -131,19 +131,19 @@ const HeaderStyle = styled.header`
             }
 
             .menu{
-                top: 80px;
+                top: 75px;
             }
         }
     } 
 
-    @media (max-width:450px){
+    @media (max-width:490px){
         .head{
             .menu{
-                top: 68px;
+                top: 65px;
             }
         } 
     } 
-    @media (max-width:380px){
+    @media (max-width:4350px){
         .head{
             .menu{
                 top: 60px;
