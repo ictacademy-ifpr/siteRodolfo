@@ -129,8 +129,27 @@ const HeaderStyle = styled.header`
                     }
                 }
             }
+
+            .menu{
+                top: 80px;
+            }
         }
-    }
+    } 
+
+    @media (max-width:450px){
+        .head{
+            .menu{
+                top: 68px;
+            }
+        } 
+    } 
+    @media (max-width:380px){
+        .head{
+            .menu{
+                top: 60px;
+            }
+        } 
+    } 
 `
 
 export default HeaderStyle
