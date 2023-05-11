@@ -72,7 +72,7 @@ export const Banner = styled.section`
     }
 
     .banner_event_4{
-        background-color: #2f4254;
+        background-color: #ffffff;
     }
 
     .banner_event_4_responsivo{

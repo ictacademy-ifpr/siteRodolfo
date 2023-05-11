@@ -25,24 +25,15 @@ const Home: NextPage = () => {
       <Header class='transparent'/>
       <Banner>
         <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" >
-          <SwiperSlide key={1} className="banner_event_3">
-            <a href="https://forms.gle/VhkCNudEfXNTq1vB7" target="_blank" rel="noreferrer">
-              <img src='cloud_services_banner.png' alt='Inscrições para Cloud Services'/>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide key={1} className="banner_event_3_responsivo">
-            <a href="https://forms.gle/VhkCNudEfXNTq1vB7" target="_blank" rel="noreferrer">
-              <img src='cloud_services_banner_responsivo.png' alt='Inscrições para Cloud Services'/>
-            </a>
-          </SwiperSlide>
+
           <SwiperSlide key={1} className="banner_event_4">
-            <a href="https://forms.gle/Km3EeD7fSVq1kFkNA" target="_blank" rel="noreferrer">
-              <img src='5G_banner.png' alt='Inscrições para curso 5G'/>
+            <a href="https://docs.google.com/forms/d/1hswlHVgg_Q67oT_pvQhzm26imYLlIBXMtH0Vxn9E-08/edit?usp=drivesdk" target="_blank" rel="noreferrer">
+              <img src='5G_turma2.png' alt='Inscrições para curso 5G'/>
             </a>
           </SwiperSlide>
           <SwiperSlide key={1} className="banner_event_4_responsivo">
-            <a href="https://forms.gle/Km3EeD7fSVq1kFkNA" target="_blank" rel="noreferrer">
-              <img src='5G_banner_responsivo.png' alt='Inscrições para curso 5G'/>
+            <a href="https://docs.google.com/forms/d/1hswlHVgg_Q67oT_pvQhzm26imYLlIBXMtH0Vxn9E-08/edit?usp=drivesdk" target="_blank" rel="noreferrer">
+              <img src='5G_turma2.png' alt='Inscrições para curso 5G'/>
             </a>
           </SwiperSlide>
           {/* <SwiperSlide key={1} className="banner_event_0">
