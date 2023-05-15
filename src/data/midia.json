@@ -24,6 +24,17 @@
         ],
         "img": "cloud.png"
     }
-
-   
+    
+    {
+        "id:": "2",
+        "title": "Reabertas as inscrições do curso de 5G pelo IFPR",
+        "text": [
+            "O Instituto Federal do Paraná (IFPR), em parceria com a Softex, anuncia a reabertura das inscrições para o curso de 5G, em parceria com a Softex e com materiais da Huawei ICT Academy. O curso é totalmente gratuito e tem como objetivo capacitar profissionais em uma das mais avançadas tecnologias de comunicação móvel.", 
+            "Com uma carga horária de 40 horas, o curso é oferecido de forma totalmente online. Os alunos com melhor desempenho receberão vouchers para a realização da prova de certificação em 5G da Huawei (HCIA). As inscrições estarão abertas entre 08/05 e 24/05, com o período das aulas entre 29/05 e 24/06.", 
+            "Quando as inscrições foram abertas anteriormente, em fevereiro, foram recebidos 468 inscritos. Vários estudantes tiveram a oportunidade de se preparar para a certificação em redes 5G da Huawei. Isto demonstra o empenho do IFPR em oferecer oportunidades de capacitação nas tecnologias mais avançadas de informação e comunicação para seus alunos e para a comunidade em geral. A parceria com empresas renomadas como a Softex e a Huawei ICT Academy decorre do comprometimento do IFPR com a formação de profissionais preparados para atender às demandas deste mercado em constante evolução. O curso de 5G é uma iniciativa do Ministério da Ciência, Tecnologia e Inovações (MCTI) e Softex no âmbito do Programa MCTI Futuro. ",
+            "Link para as inscrições: https://lnkd.in/d5TetwqM ",
+            "Não perca a chance de se capacitar em uma das mais avançadas tecnologias de comunicação móvel e se destacar no mercado de trabalho. As inscrições foram reabertas e estão disponíveis para o público em geral. Aproveite essa oportunidade única!"
+        ],
+        "img": "5g-inscricoes-reabertas.png"
+    }
 ]
