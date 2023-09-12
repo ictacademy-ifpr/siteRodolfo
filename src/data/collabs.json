@@ -1,42 +1,17 @@
 [
+    
     {
         "photo": "augusto.png",
         "name":  "Dr. Augusto Luengo Pereira Nunes",
-        "description": "Cientista da Computação, Coordenador Geral da Huawei ICT Academy e Professor no IFPR-Campus Londrina desde 2016. "
+        "description": "Cientista da Computação, Coordenador Geral da Huawei ICT Academy e Professor no IFPR-Campus Londrina desde 2016. ",
+        "link": "https://www.youtube.com/@profrodolfobarriviera5164/featured"
+
     },
     {
         "photo": "rodolfo.png",
         "name":  "Dr. Rodolfo Barriviera",
-        "description": "Engenheiro da Computação, Gestor de Inovação e Empreendedorismo, Coordenador Técnico da Huawei ICT Academy e professor no IFPR-Campus Londrina desde 2010."
-    },
-    {
-        "photo": "luciana.png",
-        "name":  "Drª. Luciana M. Vieira Pöttker",
-        "description": "Cientista da Computação, professora no IFPR desde 2010, no Campus Londrina há 10 anos."
-    },
-    {
-        "photo": "adriana.png",
-        "name":  "Drª. Adriana Carniello",
-        "description": "Cientista da Computação, professora na Rede Federal de Ensino desde 2007, no IFPR-Campus Londrina há 7 anos"
-    }, 
-    {
-        "photo": "andreia.png",
-        "name":  "Drª. Andreia Carniello",
-        "description": "Cientista da Computação, professora na Rede Federal de Ensino desde 2007, no IFPR-Campus Londrina há 7 anos"
-    },
-    {
-        "photo": "flavio-removebg.png",
-        "name":  "Me. Flávio Navarro Fernandes",
-        "description": "Cientista da Computação, mestre em Engenharia Elétrica, professor no IFPR-Campus Londrina há 10 anos."
-    },
-    {
-        "photo": "rodrigo-removebg.png",
-        "name":  "Dr. Rodrigo Barriviera",
-        "description": "Mestre e Doutor em Engenharia Elétrica. Professor do Instituto Federal do Paraná - Campus Avançado Arapongas, no IFPR desde 2010."
-    },
-    {
-        "photo": "romualdoo.png",
-        "name":  "Me. Romualdo Rubens de Freitas",
-        "description": "Mestre em Ciência da Computação. Professor do Ensino Básico, Técnico e Tecnológico do Instituto Federal do Paraná - Campus Londrina."
+        "description": "Engenheiro da Computação, Gestor de Inovação e Empreendedorismo, Coordenador Técnico da Huawei ICT Academy e professor no IFPR-Campus Londrina desde 2010.",
+        "link": "https://www.youtube.com/@profrodolfobarriviera5164/featured"
     }
+
 ]

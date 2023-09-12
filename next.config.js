@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
 
   // Add basePath
-  basePath: '/github-pages', 
+  //basePath: '/github-pages', 
 }
 
 module.exports = nextConfig

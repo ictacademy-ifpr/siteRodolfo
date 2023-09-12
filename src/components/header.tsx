@@ -36,24 +36,34 @@ export default function Header(props:Props){
                 <div className="container">
                     <Link href='/'>
                         <div className='imagesBox'>
-                            <div className='huawei'>
-                                <img src='/huawei.svg'  alt='logo Huawei'/>
-                            </div>
                             <div className='ifpr'>
-                                <img src="/ifpr.svg"  alt='logo do instituo federal do paraná'/>
+                                <img src="/ifpr degrade.png"  alt='logo do instituo federal do paraná'/>
+                            </div>
+                            <div className='huawei'>
+                                <img src='/huawei degrade.png'  alt='logo Huawei'/>
                             </div>
                         </div>
                     </Link>
                 </div>
-                <button className='btn_menu' onClick={() => setMenuOpen(!menuOpen)}>
+
+                <div className='menu_links'>
+                    
+                    <div className='links'> <Link href='/'><a>Home</a></Link></div>
+                    <div className='links'> <Link href='/courses'><a>Cursos</a></Link></div>
+                    <div className='links'> <Link href='/midia'><a>Mídia</a></Link></div>
+                </div>
+            
+                {/*<button className='btn_menu' onClick={() => setMenuOpen(!menuOpen)}>
                     <AiOutlineMenu/>
                 </button>
+
                 <div className='menu' id={menuOpen==true?'open':'close'}>
                     <Link href='/'><a>Home</a></Link>
                     <Link href='/courses'><a>Cursos</a></Link>
                     <Link href='/midia'><a>Mídia</a></Link>
-                    {/* <Link href='/'><a>Equipe</a></Link> */}
-                </div>
+                    <Link href='/'><a>Equipe</a></Link> 
+                </div> */}
+
             </div>
         </HeaderStyle>
     )

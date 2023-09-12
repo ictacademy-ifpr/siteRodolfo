@@ -22,7 +22,7 @@ export default function Courses(){
                                 <br/> Todos os cursos são online e gratuitos! E ao final do curso
                                 você ainda pode obter um certificado de conclusão!
                             </p>
-                            <img src='pin.png' alt='icone'/>
+                            {/* <img src='pin.png' alt='icone'/> */}
                         </div>
                         
                         <div className="grid">

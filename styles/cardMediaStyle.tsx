@@ -52,7 +52,7 @@ const CardMidiaStyle = styled.div`
             margin-left: 10px;
             display: flex;
             width: 90%;
-            background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+            background: #024CAD;
             color:#fff;
             border-radius: 10px;
             justify-content: center;
@@ -60,7 +60,7 @@ const CardMidiaStyle = styled.div`
             font-size: 18px;
 
             &:hover{
-                background: -webkit-radial-gradient(30% 30%,#f32e35,#880105,#e60312);
+                background: #00C4CC;
             }
         }
     }

@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>IFPR/Huawei</title> 
+        <title>ICT Academy | IFPR</title> 
       </Head>
       <Component {...pageProps} />
     </>

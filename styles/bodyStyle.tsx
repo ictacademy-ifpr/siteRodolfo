@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const Banner = styled.section`
-    height: 593px ;
+    height: 700px ;
     .swiper {
         width: 100%;
         height: 100%;
     }
 
     .swiper-slide {
+        top:100px;
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        background-color: #FFF ;
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -67,8 +68,10 @@ export const Banner = styled.section`
         background: linear-gradient(90deg, rgba(74,0,151,1) 0%, rgba(147,0,125,1) 100%);
     }
 
+    //Tentando fazer com que o fundo do site adapte-se a cor das fotos
     .banner_event_3_responsivo{
-        display: none;
+        width: 100%;
+
     }
 
     .banner_event_4{
@@ -137,6 +140,7 @@ export const Banner = styled.section`
 
 export const SectionAboutIct= styled.section`
     background-color: #f7f8fa ;
+    border-radius: 50px;
     padding: 100px  15px;
     overflow: hidden;
     
@@ -145,18 +149,28 @@ export const SectionAboutIct= styled.section`
         align-items: center;
         justify-content: space-between;
         
+
         #about_ict_left{
             max-width: 455px;            
             p{
                 font-size: 20px;
                 line-height: 35px;
             }
+            h1{
+                font-color: blue;
+            }
+
+
         }
     
         #logo_ict{
             max-width: 430px;
         }
     }
+
+      
+
+
 
     @media(max-width:950px){
         .container{
@@ -185,7 +199,8 @@ export const SectionAboutIct= styled.section`
 `
 
 export const SectionCourses = styled.section`
-    background-color: #fff;
+    background-color: #f7f8fa ;
+    border-radius: 50px;
     padding: 100px 50px;
     position: relative;
     
@@ -195,12 +210,13 @@ export const SectionCourses = styled.section`
         column-gap: 20px;
         justify-content: space-between;
     }
+    
 
     .btn{
         display: flex;
         align-items: center;
         justify-content: center;
-        background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+        background: #024CAD;
         border-radius: 40px;
         max-width: 150px;
         width: 100%;
@@ -217,22 +233,22 @@ export const SectionCourses = styled.section`
 
         &:hover{
             text-decoration: none;
-            background:#b60108;
+            background:#00C4CC;
         }
-        }
+    }
     
 
-    &:after{
-        content: "";
-        width: 80%;
-        height: 1px;
-        background-color: #afafaf;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-    }
+    // &:after{
+    //     content: "";
+    //     width: 80%;
+    //     height: 1px;
+    //     background-color: #afafaf;
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: 0;
+    //     margin: 0 auto;
+    // }
 
     @media(max-width:500px){
         padding: 50px 50px;
@@ -245,6 +261,7 @@ export const SectionCourses = styled.section`
 `
 
 export const SectionTeam = styled.section`
+    background-color: #FFF ;
     padding: 100px 50px;
     .grid{
         display: grid;

@@ -5,21 +5,21 @@ const MidiaStyle = styled.section`
     min-height: 100vh;
 
     .banner{
-        background: -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+        background: #fafafa;
         padding: 90px 10px 3px;
 
         .container{
             h2{
-                color: #fff;
+                color:  #024CAD;
                 font-size: 50px;
-                font-weight: 400;
+                font-weight: 600;
                 letter-spacing: 8px;
             }
         }
     }
 
     .body{
-        padding: 100px 20px;
+        padding: 10px 20px;
         .container{
             display: grid;
             grid-template-columns: repeat(2, auto);

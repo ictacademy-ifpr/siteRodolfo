@@ -9,36 +9,40 @@ const HeaderStyle = styled.header`
     }
     .head{
         padding: 5px 10px;
-        border-bottom: 1px solid #eaedf2 ;
+        border-bottom: 0px solid #eaedf2 ;
         position: fixed;
         z-index: 2;
         width: 100%;
         cursor: pointer;
 
+
         .container{
             display: flex ;
             align-items: center;
-            justify-content: center;
+            justify-content: left;
+            margin-left: 10px;
+            
             
             .imagesBox{
                 position: relative ;
                 display: flex;
                 align-items: center;
-                &:after{
-                    content: "";
-                    position: absolute;
-                    height: 50px;
-                    width: 1px;
-                    background: #afb1b5;
-                    top: 25%;
-                    right: 0;
-                    left: 0;
-                    margin: 0 auto;
-                }
+                // &:after{
+                //     content: "";
+                //     position: absolute;
+                //     height: 50px;
+                //     width: 1px;
+                //     background: #afb1b5;
+                //     top: 25%;
+                //     right: 0;
+                //     left: 0;
+                //     margin: 0 auto;
+                // }
 
                 .huawei{
-                    margin-right: 50px;
-                    max-width: 200px;
+                    padding: 5px;
+                    margin-right: 40px;
+                    max-width: 150px;
                     width: 100%;
                     img{
                         width: 100%;
@@ -46,13 +50,44 @@ const HeaderStyle = styled.header`
                 }
 
                 .ifpr{
-                    max-width: 190px;
+                    padding: 5px;
+                    margin-right: 10px;
+                    max-width: 140px;
                     width: 100%;
                     img{
                         width: 100%;
                     }
                 }
             }
+        }
+    
+        .menu_links{
+            position: absolute;
+            display: flex;
+            right: -90px;
+            top: 37px;
+            align-items: left;         
+            justify-content: left;
+            flex-direction: row;
+            padding-right: 10px;
+
+            border: none;
+
+            .links{
+                margin-right: 100px;
+                right: 180px;
+                top: 25px;
+            }
+
+            a{
+                color: black;
+                &:hover{
+                    font-weight: bold;
+                    transition: 0.1s;
+                }
+            }
+
+
         }
 
         .btn_menu{
@@ -68,7 +103,7 @@ const HeaderStyle = styled.header`
 
         .menu{
             position: absolute;
-            background-color: #afb1b5;
+            background-color: #ffff;
             max-width: 500px;
             width: 100%;
             right: 0;
@@ -77,7 +112,9 @@ const HeaderStyle = styled.header`
             justify-content: center;
             align-items: center;
             padding: 20px 5px;
-            border-radius: 10px 0 0 10px;
+            border-radius: 30px 0 0 30px;
+            transition: all 0.3s linear 0.3s;
+            display: flex;
 
             a:last-child{
                 margin-bottom: 0;
@@ -88,9 +125,10 @@ const HeaderStyle = styled.header`
                 font-weight: 600;
                 width: 100%;
                 text-align: center;
+                border-radius: 30px 0 0 30px;
                 padding: 10px 0;
                 &:hover{
-                    background:  -webkit-radial-gradient(30% 30%,#ed4b50,#b60108,#e91322);
+                    background:  -webkit-radial-gradient(30% 30%,#5047ED,#5CE1E6);
                     color:#fff;
                     transition: 0.3s;
                 }
@@ -98,11 +136,17 @@ const HeaderStyle = styled.header`
         }
 
         #open{
-            display: flex;
+            width: 100%;
+            height: 300px;
+            
         }
         #close{
-            display: none;
+            width: 0%;
+            height: 0px;
+        
         }
+
+        
     }
     @media (max-width:735px){
         .head{
