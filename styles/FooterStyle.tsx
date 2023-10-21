@@ -4,6 +4,20 @@ const FooterStyle = styled.footer`
   background: ffff;
   padding: 10px 10px;
 
+  img{
+    max-width: 50px;
+    width: 100%;
+    padding: 5%;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    &:hover{
+      transform: scale(1.4);
+
+    }
+
+  }
+
   .container{
     display: flex;
     align-items: center;

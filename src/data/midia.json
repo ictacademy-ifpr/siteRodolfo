@@ -1,7 +1,20 @@
 [
     {   
         "id": "0",   
-        "title": " Instituto Federal do Paraná (IFPR) disponibiliza curso de 5G",
+        "title": "IFPR campus Londrina recebe Bruno Zitnick, diretor de Relações públicas da Huawei Brasil",
+        "text": [
+            "09/10/2023 - Os professores Rodolfo Barriviera, chefe do Núcleo de Inovação Tecnológica IFPR Londrina, e Augusto Luengo Pereira Nunes, coordenador da Huawei ICT Academy IFPR Londrina, responsáveis pela parceria com a multinacional  chinesa recebem no Laboratório Avançado de Tecnologia “André Luiz Camargo” do campus, o diretor de Relações Públicas da Huawei Brasil.", 
+            "Juntamente com o reitor do IFPR, Odacir Antonio Zanatta, a assessora de relações institucionais e de inovação da Fundação Araucária e presidente da governança Londrina Inteligente, Cristiane Cordeiro e Luiz Puppin, diretor do Centro de Treinamentos da FiberX, foram  discutidos temas como o investimento tecnológico na educação, a grande demanda por profissionais qualificados em TIC na região e como solidificar ainda mais a parceria entre a instituição e a Huawei, que possui como visão de negócios, a solução de problemas."  ,
+            "Foram apresentados aos convidados a estrutura do novo laboratório, inaugurado recentemente e que conta com equipamentos de alta tecnologia para os trabalhos do projeto, como a tela interativa IdeaHub da Huawei, utilizada para transmissões online e reuniões.",
+            "A parceria entre o IFPR e a Huawei através da criação de uma ICT Academy no campus tem sido importante para o desenvolvimento tecnológico  da região, trazendo visibilidade e oportunidades de qualificação, como os cursos de capacitação em tecnologias 5G e Cloud Services, oferecidos gratuitamente para a comunidade.",
+            "Também participaram da reunião Marcelo Estevam, pró-reitor de Extensão, Pesquisa, Pós-Graduação e Inovação do IFPR, Sérgio Assis de Almeida, diretor de Planejamento e Administração do IFPR Londrina e Berenice Tatibana, professora e pesquisadora do IFPR Londrina."
+        ],
+        "img": "Visita Huawei (2).jpg"
+    },
+
+    {   
+        "id": "1",   
+        "title": "Instituto Federal do Paraná (IFPR) disponibiliza curso de 5G",
         "text": [
             "O Instituto Federal do Paraná (IFPR) está empenhado em oferecer aos seus alunos e à comunidade em geral oportunidades de capacitação nas mais avançadas tecnologias de informação e comunicação.", 
             "Neste contexto, foram lançados os cursos de Cloud Services e de 5G. Estes cursos já iniciaram suas atividades agora no início de fevereiro.", 
@@ -13,7 +26,7 @@
     },
 
     {
-        "id:": "1",
+        "id:": "2",
         "title": "Curso de Cloud gratuito oferecido pelo IFPR",
         "text": [
             "O Instituto Federal do Paraná (IFPR) está empenhado em oferecer aos seus alunos e à comunidade em geral oportunidades de capacitação nas mais avançadas tecnologias de informação e comunicação.", 
@@ -26,7 +39,7 @@
     },
     
     {
-        "id:": "2",
+        "id:": "3",
         "title": "Reabertas as inscrições do curso de 5G pelo IFPR",
         "text": [
             "O Instituto Federal do Paraná (IFPR), em parceria com a Softex, anuncia a reabertura das inscrições para o curso de 5G, em parceria com a Softex e com materiais da Huawei ICT Academy. O curso é totalmente gratuito e tem como objetivo capacitar profissionais em uma das mais avançadas tecnologias de comunicação móvel.", 

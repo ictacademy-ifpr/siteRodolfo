@@ -69,12 +69,11 @@ const HeaderStyle = styled.header`
             align-items: left;         
             justify-content: left;
             flex-direction: row;
-            padding-right: 10px;
 
             border: none;
 
             .links{
-                margin-right: 100px;
+                margin-right: 90px;
                 right: 180px;
                 top: 25px;
             }

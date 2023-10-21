@@ -1,20 +1,34 @@
 import styled from 'styled-components'
 
 const CoursesStyle = styled.section`
-    .banner{
-        background: #fafafa;
-        padding: 90px 10px 3px;
 
+
+    .banner{
+        
         .container{
+            padding-top: 1%;
+            padding-bottom: 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            
+
             h2{
                 color: #024CAD;
-                font-size: 50px;
+                font-size: 90px;
                 font-weight: 600;
             }
         }
     }
     .body{
-        padding: 10px 20px;
+        background-color: #f7f8fa ;
+        border-radius: 50px;
+        margin: 1%;
+
+        padding: 3%;
         background-color: #fafafa;
         .note{
             padding: 20px;

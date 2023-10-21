@@ -5,13 +5,23 @@ const MidiaStyle = styled.section`
     min-height: 100vh;
 
     .banner{
-        background: #fafafa;
+        background: #fff;
         padding: 90px 10px 3px;
 
+        
+
         .container{
+
+            padding-top: 1%;
+            padding-bottom: 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             h2{
                 color:  #024CAD;
-                font-size: 50px;
+                font-size: 90px;
                 font-weight: 600;
                 letter-spacing: 8px;
             }
@@ -20,6 +30,11 @@ const MidiaStyle = styled.section`
 
     .body{
         padding: 10px 20px;
+        background-color: #fafafa ;
+        border-radius: 50px;
+        margin: 1%;
+
+
         .container{
             display: grid;
             grid-template-columns: repeat(2, auto);
@@ -29,12 +44,12 @@ const MidiaStyle = styled.section`
     }
 
     .body_specific_midia{
-        padding: 50px 20px;
+
         .img_specific_midia{
             max-width: 700px;
             width: 100%;
             margin: 0 auto;
-            margin-bottom: 50px;
+            
 
             img{
                 width: 100%;
@@ -43,6 +58,7 @@ const MidiaStyle = styled.section`
     }
 
     @media(max-width:460px){
+        
         .body{
             .container{
                 grid-template-columns: repeat(1, auto);

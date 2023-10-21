@@ -5,6 +5,8 @@ const CollabsStyle = styled.div`
     align-items: center;
     justify-content: center;
     width: fit-content;
+
+    
     .photo{
         max-width: 200px;
         width: 100%;
@@ -17,6 +19,14 @@ const CollabsStyle = styled.div`
             object-fit: cover;
             width: 100%;
             height: 100%;
+
+            
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
         }
     }
     .description{

@@ -143,6 +143,7 @@ export const SectionAboutIct= styled.section`
     border-radius: 50px;
     padding: 100px  15px;
     overflow: hidden;
+    margin: 2%;
     
     .container{
         display: flex ;
@@ -203,6 +204,7 @@ export const SectionCourses = styled.section`
     border-radius: 50px;
     padding: 100px 50px;
     position: relative;
+    margin: 2%;
     
     .grid{
         display: grid;
@@ -261,7 +263,10 @@ export const SectionCourses = styled.section`
 `
 
 export const SectionTeam = styled.section`
-    background-color: #FFF ;
+    background-color: #f7f8fa ;
+    border-radius: 50px;
+    margin: 2%;
+
     padding: 100px 50px;
     .grid{
         display: grid;
@@ -274,11 +279,14 @@ export const SectionTeam = styled.section`
             grid-template-columns: repeat(1, auto);
             justify-content: center;
         }
+        
     }
     @media(max-width:500px){
         padding: 50px 20px;
         h1{
             margin-bottom: 50px ;
+
         }
+
     }
 `
