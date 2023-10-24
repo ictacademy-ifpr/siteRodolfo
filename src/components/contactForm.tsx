@@ -1,63 +1,31 @@
-import React, { useState } from "react";
-import { useRouter } from "next/router";
+import FooterStyle from '../../styles/FooterStyle'
 
-interface ContactFormData {
-  nome: string;
-  email: string;
-  mensagem: string;
+export default function contactForm(){
+    return(
+        <ContactFormStyle>
+            <div className="container">
+                {/* <img src='huawei-transp.png' alt='logo Huawei' className='logo_huawei'/>
+                <span className='city'>Londrina - Paraná</span>
+                <img src='ifpr-logo-branca.png' alt='logo IFPR' className='logo_ifpr'/>
+                <img src='3.png' alt='logo IFPR e ICT' className='logo_ict'/> */}
+                <a href='https://www.facebook.com/ictacademy.ifpr'>
+                    <img src={'facebook.png'} />
+                </a>
+                <a href='https://www.instagram.com/ictacademy.ifpr/'>
+                    <img src={'instagram.png'} />
+                </a>
+                <a href='https://www.linkedin.com/company/ictacademy-ifpr/'>
+                    <img src={'linkedin.png'} />
+                </a>
+                <a href='https://www.youtube.com/@ictacademyifpr'>
+                    <img src={'youtube.png'} />
+                </a>
+                <a href=''>
+                    <img src={'telegram.png'} />
+                </a>
+
+
+            </div>
+        </ContactFormStyle>
+    )
 }
-
-const ContactForm = () => {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
-  const [mensagem, setMensagem] = useState("");
-
-  const onSubmit = async (e) => {
-    e.preventDefault();
-
-    // Envia o formulário para o endereço de e-mail especificado
-    const data: ContactFormData = {
-      nome,
-      email,
-      mensagem,
-    };
-
-    try {
-      await fetch("https://seu-servidor-de-email.com/enviar-email", {
-        method: "POST",
-        body: JSON.stringify(data),
-      });
-
-      // Redireciona o usuário para uma página de sucesso
-      await router.push("/obrigado");
-    } catch (error) {
-      // Mostra uma mensagem de erro
-      console.log(error);
-    }
-  };
-
-  return (
-    <form onSubmit={onSubmit}>
-      <input
-        type="text"
-        placeholder="Seu nome"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Seu e-mail"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <textarea
-        placeholder="Sua mensagem"
-        value={mensagem}
-        onChange={(e) => setMensagem(e.target.value)}
-      />
-      <button type="submit">Enviar</button>
-    </form>
-  );
-};
-
-export default ContactForm;
