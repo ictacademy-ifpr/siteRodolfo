@@ -144,6 +144,7 @@ export const SectionAboutIct= styled.section`
     padding: 100px  15px;
     overflow: hidden;
     margin: 2%;
+    text-justify: distribute;
     
     .container{
         display: flex ;
@@ -156,9 +157,14 @@ export const SectionAboutIct= styled.section`
             p{
                 font-size: 20px;
                 line-height: 35px;
+                text-align: justify;
             }
             h1{
                 font-color: blue;
+            }
+            h1:hover {
+                background-color: #024CAD;
+                color: white;
             }
 
 
@@ -172,8 +178,6 @@ export const SectionAboutIct= styled.section`
             }
         }
     }
-
-      
 
 
 
@@ -289,8 +293,9 @@ export const SectionTeam = styled.section`
         padding: 50px 20px;
         h1{
             margin-bottom: 50px ;
-
+            text-align? center;
         }
+
 
     }
 `

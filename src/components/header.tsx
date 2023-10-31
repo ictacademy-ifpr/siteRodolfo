@@ -29,6 +29,8 @@ export default function Header(props:Props){
 
         return () => window.removeEventListener("scroll", handleScroll);
     },[])
+    
+    
 
     return(
         <HeaderStyle>

@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       <Header class='white'/>
 
       <Banner>
-        <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1} spaceBetween={0}>
+        <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1} spaceBetween={0} loop={true}>
 
           {/* Alterando este primeiro SwiperSlide, altera o primeiro banner mostrado no site */}
         
@@ -85,7 +85,9 @@ const Home: NextPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 2 }}
             id='about_ict_left'>
-            <h1>ICT Academy</h1>
+            <h1>
+              <a href="https://www.ictacademy.com/">ICT Academy</a>
+            </h1>
             <p>
               A Huawei ICT Academy é uma parceria entre a Huawei e instituições do mundo todo. Através dessa parceria, instituições parceiras disponibilizam treinamentos de tecnologia Huawei ICT, 
               encoraja estudantes a conseguirem o certificado da Huawei e a desenvolverem talentos com habilidades práticas para a indústria ICT e a comunidade.
