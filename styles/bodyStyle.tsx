@@ -299,3 +299,33 @@ export const SectionTeam = styled.section`
 
     }
 `
+
+export const SectionTitles = styled.section`
+    background-color: #f7f8fa ;
+    border-radius: 50px;
+    margin: 2%;
+
+    padding: 100px 50px;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 60px;
+    }
+
+    @media(max-width:800px){
+        .grid{
+            grid-template-columns: repeat(1, auto);
+            justify-content: center;
+        }
+        
+    }
+    @media(max-width:500px){
+        padding: 50px 20px;
+        h1{
+            margin-bottom: 50px ;
+            text-align? center;
+        }
+
+
+    }
+`
