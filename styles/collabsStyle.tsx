@@ -34,13 +34,13 @@ const CollabsStyle = styled.div`
             margin:0 ;
         }
         .name{
-            font-size: 30px;
+            font-size: 40px;
             color: #024CAD;
             margin-bottom: 10px;
         }
         .description_text{
-            max-width: 260px;
-            font-size: 15px;
+            max-width: 5260px;
+            font-size: 20px;
             margin-bottom: 10px;
         }
     }

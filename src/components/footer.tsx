@@ -4,20 +4,13 @@ export default function Footer(){
     return(
         <FooterStyle>
             <div className="container">
-                {/* <img src='huawei-transp.png' alt='logo Huawei' className='logo_huawei'/>
-                <span className='city'>Londrina - Paraná</span>
-                <img src='ifpr-logo-branca.png' alt='logo IFPR' className='logo_ifpr'/>
-                <img src='3.png' alt='logo IFPR e ICT' className='logo_ict'/> */}
-                <a href='https://www.facebook.com/ictacademy.ifpr'>
-                    <img src={'facebook.png'} />
+                <a href='ictacademyifpr.com.br'>
+                    <img src={'ICTLogo.png'} />
                 </a>
-                <a href='https://www.instagram.com/ictacademy.ifpr/'>
-                    <img src={'instagram.png'} />
-                </a>
-                <a href='https://www.linkedin.com/company/ictacademy-ifpr/'>
+                <a href='https://www.linkedin.com/in/profrodolfobarriviera/?originalSubdomain=br'>
                     <img src={'linkedin.png'} />
                 </a>
-                <a href='https://www.youtube.com/@ictacademyifpr'>
+                <a href='https://www.youtube.com/@profrodolfobarriviera5164/featured'>
                     <img src={'youtube.png'} />
                 </a>
                 <a href=''>

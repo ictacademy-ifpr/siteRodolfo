@@ -27,36 +27,27 @@ const Home: NextPage = () => {
       {/* Cabeçalho com as logos e menus */}
       
       <Header class='white'/>
+
       <Banner>
-        <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={3} spaceBetween={0}>
+        <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1} spaceBetween={0}>
 
           {/* Alterando este primeiro SwiperSlide, altera o primeiro banner mostrado no site */}
+        
           <SwiperSlide key={1} className="banner_event_3_responsivo">
-            <a href="https://www.huawei.com/br/news/br/2023/huawei-abre-inscricoes-para-seeds" target="_blank" rel="noreferrer">
-              <img src='seeds for the future.jpg' alt='Imagem Seeds for the future Evento'/>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide key={1} className="banner_event_3_responsivo">
-            <img src='IMG_5171.JPG' alt='Imagem ICT 1'/>
-          </SwiperSlide>
-          <SwiperSlide key={1} className="banner_event_3_responsivo">
-            <img src='IMG_4828.JPG' alt='Imagem ICT 2'/>
-          </SwiperSlide>
-          <SwiperSlide key={1} className="banner_event_3_responsivo">
-            <img src='IMG_4875.JPG' alt='Imagem ICT 3'/>
+            <img src='Banner Rodolfo (1).png' alt='Banner Rodolfo 1'/>
           </SwiperSlide>
           <SwiperSlide key={2} className="banner_event_3_responsivo">
-            <img src='IMG_5656.JPG' alt='Imagem ICT 4'/>
+            <img src='Banner Rodolfo (2).png' alt='Banner Rodolfo 2'/>
           </SwiperSlide>
-          <SwiperSlide key={2} className="banner_event_3_responsivo">
-            <img src='IMG_5660.JPG' alt='Imagem ICT 5'/>
+          <SwiperSlide key={3} className="banner_event_3_responsivo">
+            <img src='Banner Rodolfo (3).png' alt='Banner Rodolfo 3'/>
           </SwiperSlide>
 
         </Swiper>
-      </Banner>
-      
 
-      <SectionCourses>
+      </Banner>
+
+      {/* <SectionCourses>
         <div className="container">
           <motion.h1
             initial={{ transform: 'translateY(100px)', opacity: 0}}
@@ -84,33 +75,8 @@ const Home: NextPage = () => {
               </div>
           </motion.div>
         </div>
-      </SectionCourses>
-
-      <SectionTeam>
-        <div className="container">
-          <motion.h1
-            initial={{ transform: 'translateY(100px)', opacity: 0}}
-            whileInView={{ transform: 'translateY(0px)', opacity: 1}}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-            Gestores
-          </motion.h1>
-          <motion.div
-            initial={{ transform: 'translateY(200px)', opacity: 0}}
-            whileInView={{ transform: 'translateY(0px)', opacity: 2}}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-              <div className="grid">
-                {
-                  collabs.map((item, index)=>
-                    <Collabs key={index} photo={item.photo} name={item.name} description={item.description} link={item.link}/>
-                  )
-                }
-              </div>
-          </motion.div>
-        </div>
-      </SectionTeam>
-
+      </SectionCourses> */}
+      
       <SectionAboutIct>
         <div className="container">
           <motion.div
@@ -130,10 +96,41 @@ const Home: NextPage = () => {
             whileInView={{ transform: 'translate(0px)', opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 2 }}>
-              <img src='ICTLogo.png' alt='ICT Academy logo' id='logo_ict'/>
+              <a href='https://www.ictacademy.com/'>
+                <img src='ICTLogo.png' alt='ICT Academy logo' id='logo_ict' />
+              </a>
+
             </motion.div>
         </div>
       </SectionAboutIct>
+
+
+      <SectionTeam>
+        <div className="container">
+          <motion.h1
+            initial={{ transform: 'translateY(100px)', opacity: 0}}
+            whileInView={{ transform: 'translateY(0px)', opacity: 1}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}>
+            Meu trabalho na ICT Academy IFPR
+          </motion.h1>
+          <motion.div
+            initial={{ transform: 'translateY(200px)', opacity: 0}}
+            whileInView={{ transform: 'translateY(0px)', opacity: 2}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}>
+              <div className="grid">
+                {
+                  collabs.map((item, index)=>
+                    <Collabs key={index} photo={item.photo} name={item.name} description={item.description} link={item.link}/>
+                  )
+                }
+              </div>
+          </motion.div>
+        </div>
+      </SectionTeam>
+
+
 
 
       <Footer/>

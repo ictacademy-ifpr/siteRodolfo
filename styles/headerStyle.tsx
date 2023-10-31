@@ -5,7 +5,7 @@ const HeaderStyle = styled.header`
         background-color: transparent;
     }
     #white{
-        background-color: #fff;
+        background-color: transparent;
     }
     .head{
         padding: 5px 10px;
@@ -27,32 +27,12 @@ const HeaderStyle = styled.header`
                 position: relative ;
                 display: flex;
                 align-items: center;
-                // &:after{
-                //     content: "";
-                //     position: absolute;
-                //     height: 50px;
-                //     width: 1px;
-                //     background: #afb1b5;
-                //     top: 25%;
-                //     right: 0;
-                //     left: 0;
-                //     margin: 0 auto;
-                // }
 
-                .huawei{
+
+                .logoRodolfo{
                     padding: 5px;
                     margin-right: 40px;
-                    max-width: 150px;
-                    width: 100%;
-                    img{
-                        width: 100%;
-                    }
-                }
-
-                .ifpr{
-                    padding: 5px;
-                    margin-right: 10px;
-                    max-width: 140px;
+                    max-width: 200px;
                     width: 100%;
                     img{
                         width: 100%;
@@ -64,10 +44,10 @@ const HeaderStyle = styled.header`
         .menu_links{
             position: absolute;
             display: flex;
-            right: -90px;
+            right: -50px;
             top: 37px;
-            align-items: left;         
-            justify-content: left;
+            align-items: center;         
+            justify-content: center;
             flex-direction: row;
 
             border: none;

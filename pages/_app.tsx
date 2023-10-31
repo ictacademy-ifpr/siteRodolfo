@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>ICT Academy | IFPR</title> 
+        <title>Rodolfo Barriviera</title> 
       </Head>
       <Component {...pageProps} />
     </>

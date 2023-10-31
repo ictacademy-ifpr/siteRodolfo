@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Banner = styled.section`
-    height: 700px ;
+    height: 1000px ;
     .swiper {
         width: 100%;
         height: 100%;
     }
 
     .swiper-slide {
-        top:100px;
+        top:0px;
         text-align: center;
         font-size: 18px;
         background-color: #FFF ;
@@ -30,7 +30,7 @@ export const Banner = styled.section`
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: scale-down;
+        object-fit: cover;
     }
     .banner_front{
         background-image: url('/bgbanner.jpg');
@@ -166,6 +166,10 @@ export const SectionAboutIct= styled.section`
     
         #logo_ict{
             max-width: 430px;
+            &:hover{
+                transform: scale(1.1);
+    
+            }
         }
     }
 
