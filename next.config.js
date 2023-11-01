@@ -4,11 +4,11 @@ const nextConfig = {
   swcMinify: true,
 
   // Add basePath
-  //basePath: '/github-pages', 
+  basePath: '',
 
-  output:'export',
+  // output:'export',
   // Define o diretório de saída
-  distDir: '.next'
+  distDir: 'docs'
 }
 
 module.exports = nextConfig
