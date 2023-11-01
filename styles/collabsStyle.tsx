@@ -42,6 +42,7 @@ const CollabsStyle = styled.div`
             max-width: 5260px;
             font-size: 20px;
             margin-bottom: 10px;
+            text-align: justify;
         }
     }
 

@@ -133,7 +133,7 @@ const Home: NextPage = () => {
         </div>
       </SectionTeam>
       
-
+ 
       <SectionTitles>
         <div className="container">
             <motion.h1

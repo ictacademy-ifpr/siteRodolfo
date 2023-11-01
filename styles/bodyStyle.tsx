@@ -274,6 +274,7 @@ export const SectionTeam = styled.section`
     background-color: #f7f8fa ;
     border-radius: 50px;
     margin: 2%;
+    
 
     padding: 100px 50px;
     .grid{
