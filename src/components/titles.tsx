@@ -1,3 +1,6 @@
+import TitlesStyle from "../../styles/titlesStyle"
+
+
 interface Props{
     title: string,
     description: string
@@ -5,11 +8,13 @@ interface Props{
 
 export default function Titles(props:Props){
     return(
-        <section>
-            <div className= "title">{props.title}</div>
-            <div className="description">          
-                <p className='description_text'>{props.description}</p>
-            </div>
-        </section>
+        <TitlesStyle>
+            <section>
+                <li className= "title">{props.title}</li>
+                <div className="description">          
+                    <p className='description_text'>{props.description}</p>
+                </div>
+            </section>
+        </TitlesStyle>
     )
 }

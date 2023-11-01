@@ -308,8 +308,9 @@ export const SectionTitles = styled.section`
     padding: 100px 50px;
     .grid{
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
         row-gap: 60px;
+        column-gap: 70px;
     }
 
     @media(max-width:800px){
