@@ -27,121 +27,68 @@ const Home: NextPage = () => {
     <>
       {/* Cabeçalho com as logos e menus */}
       
-      <Header class='white'/>
+      
+      <div className='BodyContent'>
+        <Header class='white'/>
 
-      <Banner>
-        <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1} spaceBetween={0} loop={true}>
+        <Banner>
+          <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1} spaceBetween={0} loop={true}>
 
-          {/* Alterando este primeiro SwiperSlide, altera o primeiro banner mostrado no site */}
+            {/* Alterando este primeiro SwiperSlide, altera o primeiro banner mostrado no site */}
+          
+            <SwiperSlide key={1} className="banner_event_3_responsivo">
+              <img src='Banner Rodolfo (1).png' alt='Banner Rodolfo 1'/>
+            </SwiperSlide>
+            <SwiperSlide key={2} className="banner_event_3_responsivo">
+              <img src='Banner Rodolfo (2).png' alt='Banner Rodolfo 2'/>
+            </SwiperSlide>
+            <SwiperSlide key={3} className="banner_event_3_responsivo">
+              <img src='Banner Rodolfo (3).png' alt='Banner Rodolfo 3'/>
+            </SwiperSlide>
+
+          </Swiper>
+
+        </Banner>
+
         
-          <SwiperSlide key={1} className="banner_event_3_responsivo">
-            <img src='Banner Rodolfo (1).png' alt='Banner Rodolfo 1'/>
-          </SwiperSlide>
-          <SwiperSlide key={2} className="banner_event_3_responsivo">
-            <img src='Banner Rodolfo (2).png' alt='Banner Rodolfo 2'/>
-          </SwiperSlide>
-          <SwiperSlide key={3} className="banner_event_3_responsivo">
-            <img src='Banner Rodolfo (3).png' alt='Banner Rodolfo 3'/>
-          </SwiperSlide>
-
-        </Swiper>
-
-      </Banner>
-
-      {/* <SectionCourses>
-        <div className="container">
-          <motion.h1
-            initial={{ transform: 'translateY(100px)', opacity: 0}}
-            whileInView={{ transform: 'translateY(0px)', opacity: 1}}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-            Cursos
-          </motion.h1>
-          <motion.div
-            initial={{ transform: 'translateY(200px)', opacity: 0}}
-            whileInView={{ transform: 'translateY(0px)', opacity: 2}}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-              <div className="grid">
-                {
-                  courses.slice(0, 3).map(({url, warning, img, title, bg}, index)=>
-                    <Card key={index} url={url} warning={warning} img={img} title={title} bg={bg}/>
-                  )
-                }
-              </div>
-              <div className="btn">
-                <Link  href="/courses">
-                   Ver mais
-                </Link>
-              </div>
-          </motion.div>
-        </div>
-      </SectionCourses> */}
-      
-      <SectionAboutIct>
-        <div className="container">
-          <motion.div
-            initial={{ transform: 'translate(-300px)', opacity: 0}}
-            whileInView={{ transform: 'translate(0px)', opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
-            id='about_ict_left'>
-            <h1>
-              <a href="https://www.ictacademy.com/">ICT Academy</a>
-            </h1>
-            <p>
-              A Huawei ICT Academy é uma parceria entre a Huawei e instituições do mundo todo. Através dessa parceria, instituições parceiras disponibilizam treinamentos de tecnologia Huawei ICT, 
-              encoraja estudantes a conseguirem o certificado da Huawei e a desenvolverem talentos com habilidades práticas para a indústria ICT e a comunidade.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ transform: 'translate(300px)', opacity: 0}}
-            whileInView={{ transform: 'translate(0px)', opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}>
-              <a href='https://www.ictacademy.com/'>
-                <img src='ICTLogo.png' alt='ICT Academy logo' id='logo_ict' />
-              </a>
-
+        <SectionAboutIct>
+          <div className="container">
+            <motion.div
+              initial={{ transform: 'translate(-300px)', opacity: 0}}
+              whileInView={{ transform: 'translate(0px)', opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2 }}
+              id='about_ict_left'>
+              <h1>
+                <a href="https://www.ictacademy.com/">ICT Academy</a>
+              </h1>
+              <p>
+                A Huawei ICT Academy é uma parceria entre a Huawei e instituições do mundo todo. Através dessa parceria, instituições parceiras disponibilizam treinamentos de tecnologia Huawei ICT, 
+                encoraja estudantes a conseguirem o certificado da Huawei e a desenvolverem talentos com habilidades práticas para a indústria ICT e a comunidade.
+              </p>
             </motion.div>
-        </div>
-      </SectionAboutIct>
+            <motion.div
+              initial={{ transform: 'translate(300px)', opacity: 0}}
+              whileInView={{ transform: 'translate(0px)', opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2 }}>
+                <a href='https://www.ictacademy.com/'>
+                  <img src='ICTLogo.png' alt='ICT Academy logo' id='logo_ict' />
+                </a>
+
+              </motion.div>
+          </div>
+        </SectionAboutIct>
 
 
-      <SectionTeam>
-        <div className="container">
-          <motion.h1
-            initial={{ transform: 'translateY(100px)', opacity: 0}}
-            whileInView={{ transform: 'translateY(0px)', opacity: 1}}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-            Meu trabalho na ICT Academy IFPR
-          </motion.h1>
-          <motion.div
-            initial={{ transform: 'translateY(200px)', opacity: 0}}
-            whileInView={{ transform: 'translateY(0px)', opacity: 2}}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-              <div className="grid">
-                {
-                  collabs.map((item, index)=>
-                    <Collabs key={index} photo={item.photo} name={item.name} description={item.description} link={item.link}/>
-                  )
-                }
-              </div>
-          </motion.div>
-        </div>
-      </SectionTeam>
-      
- 
-      <SectionTitles>
-        <div className="container">
+        <SectionTeam>
+          <div className="container">
             <motion.h1
               initial={{ transform: 'translateY(100px)', opacity: 0}}
               whileInView={{ transform: 'translateY(0px)', opacity: 1}}
               viewport={{ once: true }}
               transition={{ duration: 1 }}>
-              Títulos
+              Meu trabalho na ICT Academy IFPR
             </motion.h1>
             <motion.div
               initial={{ transform: 'translateY(200px)', opacity: 0}}
@@ -150,19 +97,46 @@ const Home: NextPage = () => {
               transition={{ duration: 1 }}>
                 <div className="grid">
                   {
-                    titles.map((item, index)=>
-                      <Titles key={index} title={item.title} description={item.description}/>
+                    collabs.map((item, index)=>
+                      <Collabs key={index} photo={item.photo} name={item.name} description={item.description} link={item.link}/>
                     )
                   }
                 </div>
             </motion.div>
-        </div>
-      </SectionTitles>
-
-
-
+          </div>
+        </SectionTeam>
+        
+  
+        <SectionTitles>
+          <div className="container">
+              <motion.h1
+                initial={{ transform: 'translateY(100px)', opacity: 0}}
+                whileInView={{ transform: 'translateY(0px)', opacity: 1}}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}>
+                Títulos
+              </motion.h1>
+              <motion.div
+                initial={{ transform: 'translateY(200px)', opacity: 0}}
+                whileInView={{ transform: 'translateY(0px)', opacity: 2}}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}>
+                  <div className="grid">
+                    {
+                      titles.map((item, index)=>
+                        <Titles key={index} title={item.title} description={item.description}/>
+                      )
+                    }
+                  </div>
+              </motion.div>
+          </div>
+        </SectionTitles>
 
       <Footer/>
+
+      </div>  
+
+      
     </>
   )
 }

@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
+
+
 export const Banner = styled.section`
-    height: 1000px ;
+    height: 100% ;
+
     .swiper {
         width: 100%;
         height: 100%;
+        
     }
 
     .swiper-slide {
@@ -30,6 +34,7 @@ export const Banner = styled.section`
         display: block;
         width: 100%;
         height: 100%;
+        
         object-fit: cover;
     }
     .banner_front{
@@ -40,11 +45,15 @@ export const Banner = styled.section`
     }
 
     .banner_event_0,  .banner_event_1, .banner_event_2, .banner_event_3,  .banner_event_3_responsivo, .banner_event_4, .banner_event_4_responsivo{
+        img{
+            max-width: 100%;
+
+        }
         a{
             width: 100%;
             height: 100%;
             img{
-                object-position: bottom;
+                object-position: center;
             }
         }
     }
@@ -68,12 +77,6 @@ export const Banner = styled.section`
         background: linear-gradient(90deg, rgba(74,0,151,1) 0%, rgba(147,0,125,1) 100%);
     }
 
-    //Tentando fazer com que o fundo do site adapte-se a cor das fotos
-    .banner_event_3_responsivo{
-        width: 100%;
-
-    }
-
     .banner_event_4{
         background-color: #ffffff;
     }
@@ -83,7 +86,9 @@ export const Banner = styled.section`
     }
 
     @media(max-width:1440px){
-        height: 467px ;     
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
     }
 
     @media(max-width:500px){
@@ -93,6 +98,7 @@ export const Banner = styled.section`
                 object-position: center;
             }
         }
+
         .banner_event_4{
             display: none;
         }
@@ -113,9 +119,9 @@ export const Banner = styled.section`
         .banner_event_3_responsivo{
             display: flex;
             background: rgb(56,1,161);
-            background: linear-gradient(0deg, rgba(56,1,161,1) 0%, rgba(159,2,125,1) 100%);
+            background: white;
             img{
-                max-width: 274px;
+                max-width: 100%;
                 margin: 0 auto;
             }
         }
@@ -124,7 +130,7 @@ export const Banner = styled.section`
     @media(max-width:410px){
         .banner_event_4_responsivo,  .banner_event_3_responsivo{
             img{
-                max-width: 290px;
+                max-width: 100%;
             }
         }
     }
@@ -132,9 +138,10 @@ export const Banner = styled.section`
     @media(max-width:375px){
         .banner_event_4_responsivo,  .banner_event_3_responsivo{
             img{
-                max-width: 293px;
+                max-width: 100%;
             }
         }
+        
     }
 `
 
@@ -144,7 +151,6 @@ export const SectionAboutIct= styled.section`
     padding: 100px  15px;
     overflow: hidden;
     margin: 2%;
-    text-justify: distribute;
     
     .container{
         display: flex ;
@@ -153,18 +159,14 @@ export const SectionAboutIct= styled.section`
         
 
         #about_ict_left{
-            max-width: 455px;            
+            max-width: 455px;       
+                 
             p{
                 font-size: 20px;
                 line-height: 35px;
-                text-align: justify;
             }
             h1{
                 font-color: blue;
-            }
-            h1:hover {
-                background-color: #024CAD;
-                color: white;
             }
 
 
@@ -172,12 +174,10 @@ export const SectionAboutIct= styled.section`
     
         #logo_ict{
             max-width: 430px;
-            &:hover{
-                transform: scale(1.1);
-    
-            }
         }
     }
+
+      
 
 
 
@@ -274,7 +274,6 @@ export const SectionTeam = styled.section`
     background-color: #f7f8fa ;
     border-radius: 50px;
     margin: 2%;
-    
 
     padding: 100px 50px;
     .grid{
@@ -294,16 +293,15 @@ export const SectionTeam = styled.section`
         padding: 50px 20px;
         h1{
             margin-bottom: 50px ;
-            text-align? center;
-        }
 
+        }
 
     }
 `
-
 export const SectionTitles = styled.section`
     background-color: #f7f8fa ;
     border-radius: 50px;
+    overflow: hidden;
     margin: 2%;
 
     padding: 100px 50px;

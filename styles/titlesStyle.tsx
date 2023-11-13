@@ -5,10 +5,13 @@ const TitlesStyle = styled.div`
     align-items: center;
     justify-content: center;
     width: fit-content;
+    text-align: justify;
 
 
 
     .title{
+        text-align: left;
+
         list-style-type: disc;
         font-size: 30px;
         margin-right: 20px;
@@ -40,7 +43,6 @@ const TitlesStyle = styled.div`
             margin: 0 ;
         }
         .description{
-            text-align: center;
             .description_text{
                 margin: 0 auto;
             }

@@ -5,15 +5,16 @@ const HeaderStyle = styled.header`
         background-color: transparent;
     }
     #white{
-        background-color: transparent;
+        background-color: #fff;
     }
     .head{
         padding: 5px 10px;
         border-bottom: 0px solid #eaedf2 ;
-        position: fixed;
+        position: relative;
         z-index: 2;
         width: 100%;
         cursor: pointer;
+
 
 
         .container{
@@ -21,31 +22,34 @@ const HeaderStyle = styled.header`
             align-items: center;
             justify-content: left;
             margin-left: 10px;
-            
+            width: 80%;
+
             
             .imagesBox{
                 position: relative ;
                 display: flex;
                 align-items: center;
-
+                width: 80%;
 
                 .logoRodolfo{
                     padding: 5px;
                     margin-right: 40px;
-                    max-width: 200px;
+                    max-width: 150px;
                     width: 100%;
                     img{
                         width: 100%;
                     }
                 }
+
+
             }
         }
     
         .menu_links{
             position: absolute;
             display: flex;
-            right: -50px;
-            top: 37px;
+            right: 0px;
+            top: 30px;
             align-items: center;         
             justify-content: center;
             flex-direction: row;
@@ -128,30 +132,84 @@ const HeaderStyle = styled.header`
         
     }
     @media (max-width:735px){
+        
         .head{
             .btn_menu{
                 right:10px;
             }
+            .container{
+                display: flex ;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                max-width: 400px;
+                width: 100%;
+
+                .imagesBox{
+                    position: relative ;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    width: 100%;
+
+                }
+            }
+            .menu_links{
+                position: relative;
+                right: 0;
+                top: 0;
+                align-self: center;
+                
+                .links{
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                    margin: 0 auto; 
+                    align-self: center;
+                }
+                
+            }
         }
+
     }
 
     @media (max-width:540px){
         .head{
             .container{
-                padding: 10px 0;
+                display: flex ;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                max-width: 400px;
+                width: 100%;
+
                 .imagesBox{
+                    position: relative ;
                     display: flex;
                     align-items: center;
-                    width: 70%;
-                    &:after{
-                        display: none;
-                    }
+                    justify-content: center;
+                    margin: 0 auto;
+                    width: 100%;
 
-                    .huawei, .ifpr{
-                        max-width: 160px;
-                    }
                 }
             }
+            .menu_links{
+                position: relative;
+                right: 0;
+                top: 0;
+                align-self: center;
+                
+                .links{
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                    margin: 0 auto; 
+                    align-self: center;
+                }
+                
+            }
+        
 
             .menu{
                 top: 75px;
@@ -160,10 +218,12 @@ const HeaderStyle = styled.header`
     } 
 
     @media (max-width:490px){
+        
         .head{
             .menu{
                 top: 65px;
             }
+            
         } 
     } 
     @media (max-width:4350px){
