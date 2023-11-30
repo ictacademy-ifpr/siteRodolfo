@@ -11,9 +11,9 @@ export default function Collabs(props:Props){
     return(
         <CollabsStyle>
             <div className="photo">
-            <a href={props.link}>
-                <img src={props.photo} />
-            </a>
+                <a href={props.link}>
+                    <img src={props.photo} />
+                </a>
             </div>
             <div className="description">
                 <a href={props.link}>

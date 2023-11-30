@@ -10,7 +10,7 @@ const HeaderStyle = styled.header`
     .head{
         padding: 5px 10px;
         border-bottom: 0px solid #eaedf2 ;
-        position: relative;
+        position: fixed;
         z-index: 2;
         width: 100%;
         cursor: pointer;

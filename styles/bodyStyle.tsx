@@ -35,7 +35,7 @@ export const Banner = styled.section`
         width: 100%;
         height: 100%;
         
-        object-fit: cover;
+        object-fit: contain;
     }
     .banner_front{
         background-image: url('/bgbanner.jpg');
@@ -315,6 +315,38 @@ export const SectionTitles = styled.section`
     @media(max-width:800px){
         .grid{
             grid-template-columns: repeat(1, auto);
+            justify-content: center;
+        }
+        
+    }
+    @media(max-width:500px){
+        padding: 50px 20px;
+        h1{
+            margin-bottom: 50px ;
+            text-align? center;
+        }
+
+
+    }
+`
+
+export const SectionMaterials = styled.section`
+    background-color: #f7f8fa ;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 2%;
+
+    padding: 100px 50px;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        row-gap: 60px;
+        column-gap: 70px;
+    }
+
+    @media(max-width:800px){
+        .grid{
+            grid-template-columns: repeat(2, auto);
             justify-content: center;
         }
         

@@ -8,14 +8,16 @@ import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { motion } from "framer-motion"
 
 import Header from '../src/components/header'
-import { Banner, SectionAboutIct, SectionCourses, SectionTeam, SectionTitles} from '../styles/bodyStyle'
+import { Banner, SectionAboutIct, SectionMaterials, SectionTeam, SectionTitles} from '../styles/bodyStyle'
 import Card from '../src/components/cards'
 import Collabs from '../src/components/collabs'
 import Footer from '../src/components/footer'
 import Titles from '../src/components/titles'
+import Materials from '../src/components/materials'
 
 import collabs from '../src/data/collabs.json'
 import titles from '../src/data/titles.json'
+import materials from '../src/data/materials.json'
 
 // Página Inicial do Site
 
@@ -30,6 +32,7 @@ const Home: NextPage = () => {
       
       <div className='BodyContent'>
         <Header class='white'/>
+        <div className='headerBase'></div>
 
         <Banner>
           <Swiper autoplay={{ delay: 6000 }} pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1} spaceBetween={0} loop={true}>
@@ -106,7 +109,31 @@ const Home: NextPage = () => {
           </div>
         </SectionTeam>
         
-  
+        <SectionMaterials>
+          <div className="container">
+              <motion.h1
+                initial={{ transform: 'translateY(100px)', opacity: 0}}
+                whileInView={{ transform: 'translateY(0px)', opacity: 1}}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}>
+                Materiais Didáticos
+              </motion.h1>
+              <motion.div
+                initial={{ transform: 'translateY(200px)', opacity: 0}}
+                whileInView={{ transform: 'translateY(0px)', opacity: 2}}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}>
+                  <div className="grid">
+                    {
+                      materials.map((item, index)=>
+                        <Materials key={index} title={item.title} description={item.description} link={item.link}/>
+                      )
+                    }
+                  </div>
+              </motion.div>
+          </div>
+        </SectionMaterials>
+
         <SectionTitles>
           <div className="container">
               <motion.h1
